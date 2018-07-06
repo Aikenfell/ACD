@@ -979,32 +979,6 @@
             "item": "quest_ev_disgaea_ex2"
         },
         {
-            "iname": "AR_JIGEN_EXP_FF15",
-            "name": "限定",
-            "expr": "林檎の帝園",
-            "world": "AREA_DAILY",
-            "chap": "WD_DAILY",
-            "item": "quest_exp_ff15"
-        },
-        {
-            "iname": "AR_FF15",
-            "name": "FINAL FANTASY XV コラボイベント",
-            "expr": "FF15コラボ",
-            "world": "AREA_DAILY",
-            "chap": "WD_DAILY",
-            "item": "quest_ev_ff15",
-            "nil": "/notice/detail/event/ar_ff15"
-        },
-        {
-            "iname": "AR_FF15_EX",
-            "name": "FINAL FANTASY XV コラボイベントEX",
-            "expr": "FF15コラボ",
-            "world": "AREA_DAILY",
-            "chap": "WD_DAILY",
-            "item": "quest_ev_ff15_ex",
-            "nil": "/notice/detail/event/ar_ff15_ex"
-        },
-        {
             "iname": "AR_JIGEN_GOLD_RADIANT",
             "name": "輝石ラッシュ",
             "expr": "ラジアントヒストリアゴールドラッシュ",
@@ -2440,6 +2414,32 @@
             "world": "AREA_DAILY",
             "chap": "WD_DAILY",
             "item": "quest_kourin_lami"
+        },
+        {
+            "iname": "AR_JIGEN_EXP_FF15",
+            "name": "限定",
+            "expr": "林檎の帝園",
+            "world": "AREA_DAILY",
+            "chap": "WD_DAILY",
+            "item": "quest_exp_ff15"
+        },
+        {
+            "iname": "AR_FF15",
+            "name": "FINAL FANTASY XV コラボイベント",
+            "expr": "FF15コラボ",
+            "world": "AREA_DAILY",
+            "chap": "WD_DAILY",
+            "item": "quest_ev_ff15",
+            "nil": "/notice/detail/event/ar_ff15"
+        },
+        {
+            "iname": "AR_FF15_EX",
+            "name": "FINAL FANTASY XV コラボイベントEX",
+            "expr": "FF15コラボ",
+            "world": "AREA_DAILY",
+            "chap": "WD_DAILY",
+            "item": "quest_ev_ff15_ex",
+            "nil": "/notice/detail/event/ar_ff15_ex"
         },
         {
             "iname": "MULTI_SHINKA_ALC",
@@ -7652,7 +7652,7 @@
             "unit": [
                 "UN_V2_LOGI",
                 "UN_V2_RUNBELL",
-                "UN_V2_MELIA"
+                "UN_V2_MEGISTOS"
             ],
             "sex": 0,
             "rmax": 0,
@@ -46317,7 +46317,7 @@
                     "val": "0",
                     "item_type": 0,
                     "item": "IT_CV_GOLD4",
-                    "num": 30
+                    "num": 15
                 },
                 {
                     "type": 9,
@@ -46341,7 +46341,7 @@
                     "val": "0",
                     "item_type": 0,
                     "item": "IT_CV_GOLD4",
-                    "num": 30
+                    "num": 15
                 },
                 {
                     "type": 6,
@@ -46366,7 +46366,7 @@
                     "val": "0",
                     "item_type": 0,
                     "item": "IT_CV_GOLD4",
-                    "num": 30
+                    "num": 15
                 },
                 {
                     "type": 9,
@@ -46390,7 +46390,7 @@
                     "val": "0",
                     "item_type": 0,
                     "item": "IT_CV_GOLD4",
-                    "num": 30
+                    "num": 15
                 },
                 {
                     "type": 6,
@@ -78518,6 +78518,770 @@
             ]
         },
         {
+            "iname": "QE_EV_FF15_1",
+            "title": "UnitLv10 JobLv1推奨",
+            "name": "EP1　Prologue",
+            "expr": "FF15コラボクエスト",
+            "cond": "敵を全滅させろ",
+            "mission": "OB_EV_FF15_1",
+            "type": 5,
+            "subtype": 1,
+            "world": "WD_DAILY",
+            "area": "AR_FF15",
+            "hide": 1,
+            "pt": 8,
+            "pexp": 8,
+            "uexp": 150,
+            "gold": 1000,
+            "lv": 10,
+            "evst": "EQ_FF15_01_a_2d_SG",
+            "aplv": 1,
+            "replay_limit": 1,
+            "map": [
+                {
+                    "scn": "collabo_FF15_highway_003",
+                    "set": "ev_ff15_01_set",
+                    "btl": "plain01",
+                    "bgm": "BGM_1022"
+                }
+            ]
+        },
+        {
+            "iname": "QE_EV_FF15_2",
+            "title": "UnitLv20 JobLv2推奨",
+            "name": "EP2　Meeting",
+            "expr": "FF15コラボクエスト",
+            "cond": "敵を全滅させろ",
+            "mission": "OB_EV_FF15_2",
+            "type": 5,
+            "subtype": 1,
+            "world": "WD_DAILY",
+            "area": "AR_FF15",
+            "hide": 1,
+            "cond_quests": [
+                "QE_EV_FF15_1"
+            ],
+            "pt": 8,
+            "pexp": 8,
+            "uexp": 200,
+            "gold": 1200,
+            "lv": 20,
+            "evst": "EQ_FF15_02_a_2d",
+            "aplv": 1,
+            "replay_limit": 1,
+            "map": [
+                {
+                    "scn": "collabo_FF15_tunnel_002",
+                    "set": "ev_ff15_02_set",
+                    "btl": "plain01",
+                    "bgm": "BGM_1022"
+                }
+            ]
+        },
+        {
+            "iname": "QE_EV_FF15_3",
+            "title": "UnitLv30 JobLv3推奨",
+            "name": "EP3　Hunt",
+            "expr": "FF15コラボクエスト",
+            "text": "story001.e002",
+            "cond": "敵を全滅させろ",
+            "mission": "OB_EV_FF15_3",
+            "type": 5,
+            "subtype": 1,
+            "world": "WD_DAILY",
+            "area": "AR_FF15",
+            "hide": 1,
+            "cond_quests": [
+                "QE_EV_FF15_2"
+            ],
+            "pt": 10,
+            "pexp": 10,
+            "uexp": 250,
+            "gold": 1500,
+            "lv": 30,
+            "evst": "EQ_FF15_03_a_2d",
+            "aplv": 1,
+            "replay_limit": 1,
+            "dmg_up_pl": 200,
+            "dmg_up_en": 200,
+            "map": [
+                {
+                    "scn": "collabo_FF15_mori_001",
+                    "set": "ev_ff15_03_set",
+                    "btl": "plain01",
+                    "bgm": "BGM_1023"
+                }
+            ]
+        },
+        {
+            "iname": "QE_EV_FF15_4",
+            "title": "UnitLv35 JobLv4推奨",
+            "name": "EP4　Camp",
+            "expr": "FF15コラボクエスト",
+            "cond": "敵を全滅させろ",
+            "mission": "OB_EV_FF15_4",
+            "type": 5,
+            "subtype": 1,
+            "world": "WD_DAILY",
+            "area": "AR_FF15",
+            "hide": 1,
+            "cond_quests": [
+                "QE_EV_FF15_3"
+            ],
+            "pt": 12,
+            "pexp": 12,
+            "uexp": 300,
+            "gold": 1800,
+            "lv": 35,
+            "evst": "EQ_FF15_04_a_3d",
+            "aplv": 1,
+            "replay_limit": 1,
+            "map": [
+                {
+                    "scn": "bg_02_areti_007",
+                    "set": "ev_ff15_04_set",
+                    "btl": "plain01",
+                    "bgm": "BGM_1022"
+                }
+            ]
+        },
+        {
+            "iname": "QE_EV_FF15_5",
+            "title": "UnitLv40 JobLv6推奨",
+            "name": "EP5　Alchemy",
+            "expr": "FF15コラボクエスト",
+            "cond": "アラネアを退けろ！",
+            "mission": "OB_EV_FF15_5",
+            "type": 5,
+            "subtype": 1,
+            "world": "WD_DAILY",
+            "area": "AR_FF15",
+            "hide": 1,
+            "cond_quests": [
+                "QE_EV_FF15_4"
+            ],
+            "pt": 14,
+            "pexp": 14,
+            "uexp": 350,
+            "gold": 2200,
+            "win": 1,
+            "lv": 40,
+            "evst": "EQ_FF15_05_a_2d",
+            "aplv": 1,
+            "replay_limit": 1,
+            "map": [
+                {
+                    "scn": "bg_02_areti_006",
+                    "set": "ev_ff15_05_set",
+                    "btl": "plain01",
+                    "bgm": "BGM_1022",
+                    "ev": "EQ_FF15_05_win"
+                }
+            ]
+        },
+        {
+            "iname": "QE_EV_FF15_6",
+            "title": "UnitLv45 JobLv6推奨",
+            "name": "EP6　Encounter",
+            "expr": "FF15コラボクエスト",
+            "cond": "敵を全滅させろ",
+            "mission": "OB_EV_FF15_6",
+            "type": 5,
+            "subtype": 1,
+            "world": "WD_DAILY",
+            "area": "AR_FF15",
+            "hide": 1,
+            "cond_quests": [
+                "QE_EV_FF15_5"
+            ],
+            "pt": 16,
+            "pexp": 16,
+            "uexp": 400,
+            "gold": 2500,
+            "lv": 45,
+            "evst": "EQ_FF15_06_a_2d",
+            "aplv": 1,
+            "replay_limit": 1,
+            "map": [
+                {
+                    "scn": "bg_02_areti_004_A",
+                    "set": "ev_ff15_06_set",
+                    "btl": "plain01",
+                    "bgm": "BGM_1022"
+                }
+            ]
+        },
+        {
+            "iname": "QE_EV_FF15_7",
+            "title": "UnitLv50 JobLv7推奨",
+            "name": "EP7　Rest",
+            "expr": "FF15コラボクエスト",
+            "cond": "敵を全滅させろ",
+            "mission": "OB_EV_FF15_7",
+            "type": 5,
+            "subtype": 1,
+            "world": "WD_DAILY",
+            "area": "AR_FF15",
+            "hide": 1,
+            "cond_quests": [
+                "QE_EV_FF15_6"
+            ],
+            "pt": 20,
+            "pexp": 20,
+            "uexp": 450,
+            "gold": 3200,
+            "lv": 50,
+            "evst": "EQ_FF15_07_a_2d",
+            "aplv": 1,
+            "replay_limit": 1,
+            "map": [
+                {
+                    "scn": "bg_02_mura_001",
+                    "set": "ev_ff15_07_set",
+                    "btl": "plain01",
+                    "bgm": "BGM_1022"
+                }
+            ]
+        },
+        {
+            "iname": "QE_EV_FF15_8",
+            "title": "UnitLv55 JobLv8推奨",
+            "name": "EP8　Father",
+            "expr": "FF15コラボクエスト",
+            "cond": "敵を全滅させろ",
+            "mission": "OB_EV_FF15_8",
+            "type": 5,
+            "subtype": 1,
+            "world": "WD_DAILY",
+            "area": "AR_FF15",
+            "hide": 1,
+            "cond_quests": [
+                "QE_EV_FF15_7"
+            ],
+            "pt": 20,
+            "pexp": 20,
+            "uexp": 450,
+            "gold": 3200,
+            "lv": 55,
+            "evst": "EQ_FF15_08_a_2d",
+            "aplv": 1,
+            "replay_limit": 1,
+            "map": [
+                {
+                    "scn": "bg_02_mura_002",
+                    "set": "ev_ff15_08_set",
+                    "btl": "plain01",
+                    "bgm": "BGM_1022"
+                }
+            ]
+        },
+        {
+            "iname": "QE_EV_FF15_9",
+            "title": "UnitLv60 JobLv9推奨",
+            "name": "EP9　Highwind",
+            "expr": "FF15コラボクエスト",
+            "cond": "敵を全滅させろ",
+            "mission": "OB_EV_FF15_9",
+            "type": 5,
+            "subtype": 1,
+            "world": "WD_DAILY",
+            "area": "AR_FF15",
+            "hide": 1,
+            "cond_quests": [
+                "QE_EV_FF15_8"
+            ],
+            "pt": 25,
+            "pexp": 25,
+            "uexp": 450,
+            "gold": 3500,
+            "lv": 60,
+            "evst": "EQ_FF15_09_a_2d",
+            "aplv": 1,
+            "replay_limit": 1,
+            "map": [
+                {
+                    "scn": "bg_02_areti_008",
+                    "set": "ev_ff15_09_set",
+                    "btl": "plain01",
+                    "bgm": "BGM_1022"
+                }
+            ]
+        },
+        {
+            "iname": "QE_EV_FF15_10",
+            "title": "UnitLv65 JobLv10推奨",
+            "name": "EP10　Good bye",
+            "expr": "FF15コラボクエスト",
+            "cond": "敵を全滅させろ",
+            "mission": "OB_EV_FF15_10",
+            "type": 5,
+            "subtype": 1,
+            "world": "WD_DAILY",
+            "area": "AR_FF15",
+            "hide": 1,
+            "cond_quests": [
+                "QE_EV_FF15_9"
+            ],
+            "pt": 25,
+            "pexp": 25,
+            "uexp": 450,
+            "gold": 3800,
+            "lv": 65,
+            "evst": "EQ_FF15_10_a_2d",
+            "evw": "EQ_FF15_10_b_2d",
+            "aplv": 1,
+            "replay_limit": 1,
+            "map": [
+                {
+                    "scn": "bg_02_areti_008",
+                    "set": "ev_ff15_10_set",
+                    "btl": "plain01",
+                    "bgm": "BGM_1023"
+                }
+            ]
+        },
+        {
+            "iname": "QE_EV_FF15_HA",
+            "title": "【ハード】",
+            "name": "FINAL FANTASY XV コラボ",
+            "expr": "FF15コラボクエスト",
+            "cond": "敵を全滅させろ",
+            "mission": "QE_EV_FF15_HA",
+            "type": 5,
+            "subtype": 1,
+            "world": "WD_DAILY",
+            "area": "AR_FF15",
+            "hide": 1,
+            "cond_quests": [
+                "QE_EV_FF15_10"
+            ],
+            "pt": 40,
+            "pexp": 40,
+            "uexp": 500,
+            "gold": 5000,
+            "lv": 70,
+            "aplv": 1,
+            "limit": 3,
+            "dayreset": 1,
+            "map": [
+                {
+                    "scn": "bg_02_areti_008",
+                    "set": "ev_ff15_HA_set",
+                    "btl": "plain01",
+                    "bgm": "BGM_1023"
+                }
+            ]
+        },
+        {
+            "iname": "QE_EV_FF15_EX_1",
+            "title": "高難易度クエスト",
+            "name": "FINAL FANTASY XV コラボ[EX1]",
+            "expr": "FF15コラボクエスト",
+            "cond": "マンドラゴラ以外を倒せ！",
+            "mission": "OB_EV_FF15_EX_1",
+            "type": 5,
+            "subtype": 1,
+            "world": "WD_DAILY",
+            "area": "AR_FF15_EX",
+            "hide": 1,
+            "cond_quests": [
+                "QE_EV_FF15_10"
+            ],
+            "pt": 40,
+            "pexp": 40,
+            "uexp": 500,
+            "gold": 5000,
+            "win": 9,
+            "lv": 75,
+            "aplv": 1,
+            "extra": 1,
+            "map": [
+                {
+                    "scn": "bg_01_isekimae_001_E",
+                    "set": "ev_ff15_ex_01_set",
+                    "btl": "plain01",
+                    "bgm": "BGM_1023"
+                }
+            ]
+        },
+        {
+            "iname": "QE_EV_FF15_EX_2",
+            "title": "高難易度クエスト",
+            "name": "FINAL FANTASY XV コラボ[EX2]",
+            "expr": "FF15コラボクエスト",
+            "cond": "敵を全滅させろ",
+            "mission": "OB_EV_FF15_EX_2",
+            "type": 5,
+            "subtype": 1,
+            "world": "WD_DAILY",
+            "area": "AR_FF15_EX",
+            "hide": 1,
+            "cond_quests": [
+                "QE_EV_FF15_10"
+            ],
+            "pt": 40,
+            "pexp": 40,
+            "uexp": 500,
+            "gold": 5000,
+            "lv": 75,
+            "aplv": 1,
+            "extra": 1,
+            "map": [
+                {
+                    "scn": "bg_02_areti_005_A",
+                    "set": "ev_ff15_ex_02_set",
+                    "btl": "plain01",
+                    "bgm": "BGM_1023"
+                }
+            ]
+        },
+        {
+            "iname": "QE_EV_FF15_EX_3",
+            "title": "高難易度クエスト",
+            "name": "FINAL FANTASY XV コラボ[EX3]",
+            "expr": "FF15コラボクエスト",
+            "cond": "敵を全滅させろ",
+            "mission": "OB_EV_FF15_EX_3",
+            "type": 5,
+            "subtype": 1,
+            "world": "WD_DAILY",
+            "area": "AR_FF15_EX",
+            "hide": 1,
+            "cond_quests": [
+                "QE_EV_FF15_10"
+            ],
+            "pt": 40,
+            "pexp": 40,
+            "uexp": 500,
+            "gold": 5000,
+            "lv": 75,
+            "aplv": 1,
+            "extra": 1,
+            "map": [
+                {
+                    "scn": "bg_02_slum_003_N",
+                    "set": "ev_ff15_ex_03_set",
+                    "btl": "plain01",
+                    "bgm": "BGM_1023"
+                }
+            ]
+        },
+        {
+            "iname": "QE_EV_FF15_EX_4",
+            "title": "高難易度クエスト",
+            "name": "FINAL FANTASY XV コラボ[EX4]",
+            "expr": "FF15コラボクエスト",
+            "cond": "敵を全滅させろ",
+            "mission": "OB_EV_FF15_EX_4",
+            "type": 5,
+            "subtype": 1,
+            "world": "WD_DAILY",
+            "area": "AR_FF15_EX",
+            "hide": 1,
+            "cond_quests": [
+                "QE_EV_FF15_10"
+            ],
+            "pt": 40,
+            "pexp": 40,
+            "uexp": 500,
+            "gold": 5000,
+            "lv": 75,
+            "aplv": 1,
+            "extra": 1,
+            "map": [
+                {
+                    "scn": "bg_02_tikasisetu_oku_N",
+                    "set": "ev_ff15_ex_04_set",
+                    "btl": "plain01",
+                    "bgm": "BGM_1023"
+                }
+            ]
+        },
+        {
+            "iname": "QE_EV_FF15_EX_SP_1",
+            "title": "超難易度クエスト",
+            "name": "FINAL FANTASY XV コラボ[EX1極]",
+            "expr": "FF15コラボクエスト",
+            "cond": "マンドラゴラ以外を倒せ！",
+            "mission": "OB_EV_FF15_EX_SP_1",
+            "type": 5,
+            "subtype": 1,
+            "world": "WD_DAILY",
+            "area": "AR_FF15_EX",
+            "hide": 1,
+            "cond_quests": [
+                "QE_EV_FF15_EX_1"
+            ],
+            "pt": 50,
+            "pexp": 50,
+            "uexp": 500,
+            "gold": 5000,
+            "win": 10,
+            "lv": 85,
+            "aplv": 1,
+            "notcon": 1,
+            "extra": 1,
+            "map": [
+                {
+                    "scn": "bg_01_isekimae_001_E",
+                    "set": "ev_ff15_ex_sp_01_set",
+                    "btl": "plain01",
+                    "bgm": "BGM_1023"
+                }
+            ]
+        },
+        {
+            "iname": "QE_EV_FF15_EX_SP_2",
+            "title": "超難易度クエスト",
+            "name": "FINAL FANTASY XV コラボ[EX2極]",
+            "expr": "FF15コラボクエスト",
+            "cond": "敵を全滅させろ",
+            "mission": "OB_EV_FF15_EX_SP_2",
+            "type": 5,
+            "subtype": 1,
+            "world": "WD_DAILY",
+            "area": "AR_FF15_EX",
+            "hide": 1,
+            "cond_quests": [
+                "QE_EV_FF15_EX_2"
+            ],
+            "pt": 50,
+            "pexp": 50,
+            "uexp": 500,
+            "gold": 5000,
+            "lv": 85,
+            "aplv": 1,
+            "notcon": 1,
+            "extra": 1,
+            "map": [
+                {
+                    "scn": "bg_02_areti_005_A",
+                    "set": "ev_ff15_ex_sp_02_set",
+                    "btl": "plain01",
+                    "bgm": "BGM_1023"
+                }
+            ]
+        },
+        {
+            "iname": "QE_EV_FF15_EX_SP_3",
+            "title": "超難易度クエスト",
+            "name": "FINAL FANTASY XV コラボ[EX3極]",
+            "expr": "FF15コラボクエスト",
+            "cond": "敵を全滅させろ",
+            "mission": "OB_EV_FF15_EX_SP_3",
+            "type": 5,
+            "subtype": 1,
+            "world": "WD_DAILY",
+            "area": "AR_FF15_EX",
+            "hide": 1,
+            "cond_quests": [
+                "QE_EV_FF15_EX_3"
+            ],
+            "pt": 50,
+            "pexp": 50,
+            "uexp": 500,
+            "gold": 5000,
+            "lv": 85,
+            "aplv": 1,
+            "notcon": 1,
+            "extra": 1,
+            "map": [
+                {
+                    "scn": "bg_02_slum_003_N",
+                    "set": "ev_ff15_ex_sp_03_set",
+                    "btl": "plain01",
+                    "bgm": "BGM_1023"
+                }
+            ]
+        },
+        {
+            "iname": "QE_EV_FF15_EX_SP_4",
+            "title": "超難易度クエスト",
+            "name": "FINAL FANTASY XV コラボ[EX4極]",
+            "expr": "FF15コラボクエスト",
+            "cond": "敵を全滅させろ",
+            "mission": "OB_EV_FF15_EX_SP_4",
+            "type": 5,
+            "subtype": 1,
+            "world": "WD_DAILY",
+            "area": "AR_FF15_EX",
+            "hide": 1,
+            "cond_quests": [
+                "QE_EV_FF15_EX_4"
+            ],
+            "pt": 50,
+            "pexp": 50,
+            "uexp": 500,
+            "gold": 5000,
+            "lv": 85,
+            "aplv": 1,
+            "notcon": 1,
+            "extra": 1,
+            "map": [
+                {
+                    "scn": "bg_02_tikasisetu_oku_N",
+                    "set": "ev_ff15_ex_sp_04_set",
+                    "btl": "plain01",
+                    "bgm": "BGM_1023"
+                }
+            ]
+        },
+        {
+            "iname": "QE_TM_EXP_FF15_LV1",
+            "title": "【1日1回限定】",
+            "name": "林檎の帝園 FINAL FANTASY XV",
+            "expr": "経験値クエスト：林檎・金塊",
+            "cond": "敵を全滅させろ",
+            "mission": "OB_TM_EXP_FF15_LV1",
+            "drops": [
+                "IT_UG_APPLE_FF15",
+                "IT_CV_GOLD3"
+            ],
+            "type": 5,
+            "subtype": 0,
+            "world": "WD_DAILY",
+            "area": "AR_JIGEN_EXP_FF15",
+            "hide": 1,
+            "pt": 40,
+            "pexp": 40,
+            "uexp": 10000,
+            "gold": 10000,
+            "lv": 40,
+            "aplv": 1,
+            "limit": 1,
+            "dayreset": 1,
+            "not_search": 1,
+            "map": [
+                {
+                    "scn": "bg_01_mori_ap_H_001_A",
+                    "set": "week_exp_ff15_lv1_set",
+                    "btl": "plain01",
+                    "bgm": "BGM_1022"
+                }
+            ]
+        },
+        {
+            "iname": "QE_EV_MULTI_FF15_EX_1",
+            "title": "高難易度クエスト",
+            "name": "FINAL FANTASY XV コラボ[EX1]",
+            "expr": "FF15コラボクエスト",
+            "cond": "マンドラゴラ以外を倒せ！",
+            "type": 1,
+            "world": "WD_01",
+            "area": "MULTI_FF15_EX",
+            "hide": 1,
+            "pt": 20,
+            "pexp": 40,
+            "uexp": 400,
+            "mcoin": 80,
+            "win": 9,
+            "lv": 75,
+            "multi": 1,
+            "pnum": 4,
+            "unum": 1,
+            "multi_dead": 1,
+            "aplv": 1,
+            "not_search": 1,
+            "map": [
+                {
+                    "scn": "bg_01_isekimae_001_E",
+                    "set": "ev_ff15_ex_01_set",
+                    "btl": "plain01",
+                    "bgm": "BGM_1023"
+                }
+            ]
+        },
+        {
+            "iname": "QE_EV_MULTI_FF15_EX_2",
+            "title": "高難易度クエスト",
+            "name": "FINAL FANTASY XV コラボ[EX2]",
+            "expr": "FF15コラボクエスト",
+            "cond": "敵を全滅させろ",
+            "type": 1,
+            "world": "WD_01",
+            "area": "MULTI_FF15_EX",
+            "hide": 1,
+            "pt": 20,
+            "pexp": 40,
+            "uexp": 400,
+            "mcoin": 80,
+            "lv": 75,
+            "multi": 1,
+            "pnum": 4,
+            "unum": 1,
+            "multi_dead": 1,
+            "aplv": 1,
+            "not_search": 1,
+            "map": [
+                {
+                    "scn": "bg_02_areti_005_A",
+                    "set": "ev_ff15_ex_02_m_set",
+                    "btl": "plain01",
+                    "bgm": "BGM_1023"
+                }
+            ]
+        },
+        {
+            "iname": "QE_EV_MULTI_FF15_EX_3",
+            "title": "高難易度クエスト",
+            "name": "FINAL FANTASY XV コラボ[EX3]",
+            "expr": "FF15コラボクエスト",
+            "cond": "敵を全滅させろ",
+            "type": 1,
+            "world": "WD_01",
+            "area": "MULTI_FF15_EX",
+            "hide": 1,
+            "pt": 20,
+            "pexp": 40,
+            "uexp": 400,
+            "mcoin": 80,
+            "lv": 75,
+            "multi": 1,
+            "pnum": 4,
+            "unum": 1,
+            "multi_dead": 1,
+            "aplv": 1,
+            "not_search": 1,
+            "map": [
+                {
+                    "scn": "bg_02_slum_003_N",
+                    "set": "ev_ff15_ex_03_m_set",
+                    "btl": "plain01",
+                    "bgm": "BGM_1023"
+                }
+            ]
+        },
+        {
+            "iname": "QE_EV_MULTI_FF15_EX_4",
+            "title": "高難易度クエスト",
+            "name": "FINAL FANTASY XV コラボ[EX4]",
+            "expr": "FF15コラボクエスト",
+            "cond": "敵を全滅させろ",
+            "type": 1,
+            "world": "WD_01",
+            "area": "MULTI_FF15_EX",
+            "hide": 1,
+            "pt": 20,
+            "pexp": 40,
+            "uexp": 400,
+            "mcoin": 80,
+            "lv": 75,
+            "multi": 1,
+            "pnum": 4,
+            "unum": 1,
+            "multi_dead": 1,
+            "aplv": 1,
+            "not_search": 1,
+            "map": [
+                {
+                    "scn": "bg_02_tikasisetu_oku_N",
+                    "set": "ev_ff15_ex_04_m_set",
+                    "btl": "plain01",
+                    "bgm": "BGM_1023"
+                }
+            ]
+        },
+        {
             "iname": "QE_EV_HALL_ALEX_01",
             "title": "【期間限定】",
             "name": "ハロウィン★シュガーラッシュ！１話",
@@ -81166,6 +81930,34 @@
                     "set": "qe_cm_bonus_set01",
                     "btl": "plain01",
                     "bgm": "BGM_0025"
+                }
+            ]
+        },
+        {
+            "iname": "QE_EV_GL_MH_01_MULTI_EX",
+            "title": "【期間限定】",
+            "name": "Overture[EX]",
+            "cond": "敵を全滅させろ",
+            "type": 1,
+            "subtype": 1,
+            "world": "WD_01",
+            "area": "MULTI_GL_MH",
+            "hide": 1,
+            "pt": 20,
+            "pexp": 40,
+            "uexp": 400,
+            "mcoin": 40,
+            "lv": 75,
+            "multi": 1,
+            "pnum": 4,
+            "unum": 1,
+            "multi_dead": 1,
+            "map": [
+                {
+                    "scn": "bg_01_toride_soto_001_A",
+                    "set": "ev_gl_mh_1_EX_set",
+                    "btl": "plain01",
+                    "bgm": "BGM_0011"
                 }
             ]
         },
@@ -85229,34 +86021,6 @@
             "gold": 5000,
             "lv": 75,
             "aplv": 1,
-            "map": [
-                {
-                    "scn": "bg_01_toride_soto_001_A",
-                    "set": "ev_gl_mh_1_EX_set",
-                    "btl": "plain01",
-                    "bgm": "BGM_0011"
-                }
-            ]
-        },
-        {
-            "iname": "QE_EV_GL_MH_01_MULTI_EX",
-            "title": "【期間限定】",
-            "name": "Overture[EX]",
-            "cond": "敵を全滅させろ",
-            "type": 1,
-            "subtype": 1,
-            "world": "WD_01",
-            "area": "MULTI_GL_MH",
-            "hide": 1,
-            "pt": 20,
-            "pexp": 40,
-            "uexp": 400,
-            "mcoin": 40,
-            "lv": 75,
-            "multi": 1,
-            "pnum": 4,
-            "unum": 1,
-            "multi_dead": 1,
             "map": [
                 {
                     "scn": "bg_01_toride_soto_001_A",
